@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Created by Jeremy Fernandez on April 12th, 2023-->
+    <head>
+        <title>Urban Home Real Estate</title>
+        <meta charset="UTF-8">
+        <meta content="Real Estate Final Project!" name="description" />
+        <link href="HomeStyle.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="allPage">
+            <header>
+                <nav>
+                    <a href="index.html">
+                        <button>
+                            <b>Home</b>
+                        </button>
+                    </a>
+                    &nbsp;
+                    &nbsp;
+                    <a href="propertylist.html">
+                        <button>
+                            <b>Available Properties</b>
+                        </button>
+                    </a>
+                    &nbsp;
+                    &nbsp;
+                    <a href="ContactUs.html">
+                        <button>
+                            <b>Contact Us</b>
+                        </button>
+                    </a>
+                    &nbsp;
+                    &nbsp;
+                    <a href="SiteMap.html">
+                        <button>
+                            <b>Site Map/Credits</b>
+                        </button>
+                    </a>
+                </nav>
+            </header>
+            <br>
+            <br>
+            <form action="mailto:jfern100@my.centennialcollege.ca"
+                method="POST">
+                <fieldset>
+                    <legend><b>Personal Information:</b></legend>
+                    <p>
+                        <label for="First Name"><b>First Name:</b></label>
+                        <input
+                            id="First Name"
+                            name="First Name"
+                            size="25"
+                            type="text"
+                            required="required"
+                            />
+                    </p>
+                    <p>
+                        <label for="Last Name"><b>Last Name:</b></label>
+                        <input
+                            id="Last Name"
+                            name="Last Name"
+                            size="25"
+                            type="text"
+                            required="required"
+                            />
+                    </p>
+                    <p>
+                        <label for="Email"><b>Email:</b></label>
+                        <input
+                            id="Email"
+                            name="Email"
+                            size="25"
+                            type="email"
+                            required="required"
+                            />
+                    </p>
+                    <p>
+                        <label for="Phone"><b>Phone:</b></label>
+                        <input
+                            id="Phone"
+                            name="Phone"
+                            size="25"
+                            type="tel"
+                            required="required"
+                            />
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend><b>Property Inquiry:</b></legend>
+                    <label for="Property Type"><b>Type of Property:</b></label>
+                    <br>
+                    <select id="property_type" name="property_type"
+                        multiple="true" required="required">
+                        <option value="house_option" selected="true">House</option>
+                        <option value="condo_option" selected="true">Condominium</option>
+                    </select>
+                    <br>
+                    <label for="Bedroom_number"><b>Number of Bedrooms:</b></label>
+                    <br>
+                    <select id="bedroom_number" name="bedroom_number"
+                        multiple="true" required="required">
+                        <option value="1bed_option" selected="true">1 Bedroom</option>
+                        <option value="2bed_option" selected="true">2 Bedroom</option>
+                        <option value="3bed_option" selected="true">3 Bedroom</option>
+                    </select>
+                    <br>
+                    <label for="Bathroom_number"><b>Number of Bathrooms:</b></label>
+                    <br>
+                    <select id="bathroom_number" name="bathroom_number"
+                        multiple="true" required="required">
+                        <option value="1bath_option" selected="true">1 Bathroom</option>
+                        <option value="2bath_option" selected="true">2 Bathroom</option>
+                        <option value="3bath_option" selected="true">3 Bathroom</option>
+                    </select>
+                    <br>
+                    <label for="Price_range"><b>Price Range:</b></label>
+                    <br>
+                    <input type="range" min="$250,000" max="$5,000,000"
+                        value="$500,000" required="required">
+                </fieldset>
+                <fieldset>
+                    <legend><b>Additional Information</b></legend>
+                    <br>
+                    <label for="additional_comments"><b>Additional Comments?</b></label>
+                    <br>
+                    <textarea type="textarea" id="additional_comments"
+                        name="additional_comments" required="required"
+                        placeholder="Please enter your comments here!"
+                        rows="20" cols="100">
+                        Please enter your comments here!
+                    </textarea>
+                </fieldset>
+                <p>
+                    <input name="btnSubmit" type="submit" value="Submit" />
+                    <input name="btnReset" type="reset" value="Clear" />
+                </p>
+                <h3><em>We will get back to you in 3 to 5 business days!</em></h3>
+            </form>
+            <footer>
+                <h6>
+                    &copy;&nbsp;&nbsp; Copyright Jeremy Fernandez - COMP213
+                    Winter 2023
+                </h6>
+            </footer>
+        </div>
+    </body>
+</html>
